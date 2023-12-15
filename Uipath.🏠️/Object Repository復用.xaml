@@ -1,0 +1,109 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Object_Repository復用" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="761.1428571428571,746.2857142857143" sap2010:WorkflowViewState.IdRef="Object_Repository復用_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Object_Repository復用" sap:VirtualizedContainerService.HintSize="546.2857142857143,681.1428571428571" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="计算器" sap:VirtualizedContainerService.HintSize="484.57142857142856,570.8571428571429" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="11da3bf2-1579-4f0f-a9a0-b2ea11c1f474" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450.2857142857143,272" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '6'" sap:VirtualizedContainerService.HintSize="388.57142857142856,159.42857142857142" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="Mf_Dtgyc00SLycSZqjnzdw" DesignTimeRectangle="293, 650, 134, 91" DesignTimeScaleFactor="1.75" FriendlyName="'6'" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='数字键盘' /&gt;&lt;uia automationid='num6Button' cls='Button' name='六' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='数字键盘' /&gt;&lt;uia automationid='num6Button' cls='Button' name='六' role='按钮' check:fulltext='6' /&gt;" Guid="4efb6968-f205-4b9f-ab91-62813626289a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIoAAABfCAYAAAA3dF/4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAPKSURBVHhe7dzrSWNBGIfx7cMOLMESbMEKLMEOrMAGbMAGLEBQEEHwBt5zgxg1mkRjmD3/YSZMzsW8+3Ezzw9e3N2c+OU8zJxz4vpnOBw6hlk2hMKYpjGU9/d39/Ly4rrdrmu1Wu75+ZlZwdG51Tnu9/v+nNe1oKkNRW+q+6bM6o/OfV0TlVA6nc78TVpRRqORm81mDqvp5+fHn+N0cdAKU+5iIZR4sGKZTCbhWyEXOuftdts3UF5Z5qFof4pFfX19hbciN+PxeN5Bes0yDyWuJoPBILwFuYot6NKjEor2Jb3IlgNds6iFXq9XDSXeAnPhiul06lvQ9UolFL2gAST2QCj4FaHAhFBgQigwIRSYEApMCAUmhAITQoEJocCEUGBCKDAhFJgQCkwIBSaEAhNCgQmhwIRQYEIoMCEUmBAKTAgFJoQCE0KBCaHAhFBgQigwIZQG9/f3bm9vz21tbbm1tbX56O8HBwfhqHwQSg2FsL6+vhBIeTY2NvwvlskFoZQokhiDYtnd3XWHh4fu6OjIv7azs+Nf07/nhFASCiJGsrm52bhiKJqcVhMhlIS2k2WR5IpQgnTL0YqBRYQSxLsbrSaoIpQgria6JUYVoRS01ZS3HW1F6TMU3QFtb29nuy0RSiG929Gfyw/ZyqNb5NwQSkHbTYwgPmjTHdD+/r5fQTR6bpI+hMttiyKUQhqKpmnF0C1zvIXW6DF/LgilkIaiEH6T3kZrxckFoRTSUCwnPx6ri9tcEErhXx+2xWN10ZsLQikojnjyFc0yhJJpKBJP/rJbX13QxmNz+gSZUIL44wO6Bf7tA8F0m9Izl1wQSpBuP02fHp+fny88Z8kJoSS0lcRYFILugOoeuOmroskJoZTELahpcoxECKWGVhA9I4kriEbbkZ635PoDTYQCE0KBCaHAhFBgQigwIRSYEApMCAUmhAITQoEJocCEUGBCKDAhFJgQCkwIBSaEAhNCgQmhwIRQYEIoMCEUmBAKTAgFJo2htFot/8JsNguHIlfT6dS30G63q6F0u13/4mQyCYcjV6PRyLfQ6/Wqoei/TurFwWAQDkeu+v2+b0FfK6G8vb2529tbP+PxOLwFufn8/PQN3N3d+SYqoWg6nY67uLhwNzc3/g3Iy8fHh7u+vvYN6FIkbWMhFM3l5aU7Ozvz8/Dw4F5fX/3FDVbT9/e3P8f6HbrxvF9dXS00oamEonl8fHQnJyfu+PiYyWh0zp+enio9aGpD0eiiVm/SCnN6elr7jZn/f3RutYLo8YhWlroWNI2hMEw6hMIYZuj+Apir3p47wAEUAAAAAElFTkSuQmCC" InformativeScreenshot="72305ac38137caa068126585ee97545a.png" Reference="V8TgNUEqnkuc_W41PgtOEw/odPeINGm602r2gz2oEjwFQ" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='计算器' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvType="Icon" DesignTimeRectangle="37, 3, 38, 42" ElementType="Icon" FriendlyName="'applicationframehost.ex…'" ImageBase64="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" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" ContentHash="01jkN3ljjky9wU_mCWf9vA" FilePath="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAALNElEQVR42tVdy44kRxU9kZVjo8EbljZIbaHp94zNwhL8AHvzI6hZ8bCQMMZeeCQYhhUS4hfsNQs2SAjJIDPTXdWPAaORwOzZIIvuPCwysyqeGY+MiOqpRXdVZWZU5rlxz71x740IgYTXw8e/fhvAIwA78vckAFA5V/2KMN5Jb6j/EMfDNL53/NJwD2ZDdDZD4/vNfdt+wXhgEHgO4OTdH5x8HIulSAT/o9nASyfR+vQW8CeAt4NvB359xAW81tgE8PrF33n3h3FCaBMU4NEU8Cr4U8BbwHcBb+2oqcDbez0djTEE+E2TjwAUF8COH3gHjInAu0SZg26CgB+OTwA/XrETC2a0AErwvPVILZ5PpxtM6ENJDaAX+I68JTxvl1YM8BtrKbzAk1UE4OZ5E3iA7ArxvM+QzuN5E3hCjE2K+cCnU5Cl18vAsyNIAujQMdWtzMvzsW6ly1kUov8j2P8nJ1srpAEO72YE/p/338K/3/jmRM/m5jMttkU7Rmq8z03Pt343fpav068hpfMGgVI6V7l2c+z1zz7B1z/7C9A0QMdBIluyAetnJ9c3/cVioYJvAV6XoWzUVUAlA0j1O0NAocAb51MCXRcEpWv6P/94/S3s/O3PaEAIISDYrSmKiUrQppvg4QN7nu94g+vrzq7NsidhAV4BUAdeAkD9TgN+/DD+o/p53ZNlQVkFoWmHch1xc3MDIQABMRv8dCOsuJVER6LrCHzx3+J0Q0pCs13noBDls35MF5JBU9J53TXYCXCxAIHeHsywA8k2gDIYYG8DbqgYwmDgoQJl4/RaPD+eZ2pA33bX9R1OdIRoxGCf00cESTZAFzq7/oE63njppj7Py3ZKB9iiHeN1nV1Tuq5bnyN04KvaAJlveyJSODaW5w1gLXSj87yTy4c2onjeRktKe7KGdkBvioeLBIAt2ACCEg2NT53ZrQzleSegdkE4tUH7bVl7OJwwnLbhf+EMtJSxAdbwwdr70OiG5kCIDk6fRTcW/nYbYwvP2+yBfE1Hw7uaA/wMCrKHD2TPJ5TnQ9xKHXjdzQzi+Qm30gB7+C2rZpBav5NUoKobqvV6+Qul1ye4lU6en3IrbTyva4fLrXRqhko9JAzwhQY864UizF7v5Oc5PD/lVtp43utWBvL8KMCOpkEXUs8nZgek542EJTF4QSzE877wAWN4fi0g87hsU2QbQHcotyQFyb8kRQXHCGEkz7vpJ0/4wKUBLp4336vapshgDMixdjBO6qFCCAgIbO4lMHwQw/NzwgdaL3e7mMN7G/WM74UAxxyBBjxrGWFbVgoNINDglT/+Dv/51rerhomt7qfB8/I19nHBpHAIfO3vf4AQTR+M42AQRG0bQDVZ1A0PINCgbVu8dvYnfOWT3+P6+hpdd7MBwiNFevPB9nyEvTl6e6UtfECtOwsxaLdo0N65g7tffgXNSy/3A7BGgB4LWdYNlXpdf5MCzWKBL929izsvv4Sb/10Pqj9kzdQhsqdcJXAAOAG8t0qDjvGNRKsjxzdCoFk0aBctmqbpEzJCSAEIJpuB9GCcogkComnQoEOLBQSAhVis88F9cKsLrTLz5Ilt4NOjJAwbWFo0b4z9N02DpllANM1geOcBn4WCRvA7dhAAGrGAWPQ3SMXTYHweNrj6gF7gOdXj7UUZmxsYe/rQyUZtF6RkjFE5GKc9noDoR4bDDTWLdjBcc6rMMgHv4XlfZcQ65DMAD9AJPhPKI6JF+N7DX9FVfdCROavMivO8tTWnAyCXpQgn8B/+5PuiqAB++vAxY6rMjHB1Mt34ed4L/FThl0sowmeH1CPlBfDhY9Yo76tDN76BFN19xlFx9zBSAPMq4yy9+t7uPezeu5fU5tWzZ7i8fKb8yv7eHvb2dpPau7i8wsXFpXLPhwf7ONjfS2rv/OISy9U5IoYn3leTXpZIk26AZPABYG931wjypYIPYA20HLlNBR+D8KxReT1QVL40kTML8iKKf3O2xsx3SWyhMs4FPlng4TK1VgF41hwHBPvzswN9zKYCLNQ75t5ue5vAd3o22Wio0L2xZnW0x63M+oDMDH4mmmSINpS0ATHhg3kPl9cOsBD4W8wJ55srVcytIrPLcnoeXMWylFIWYG6xU0l5Ts3+3F5lXEaK5dwk66QyMLNNmd9h2hw9kyw2Frs1wCMz8HnyASyAWma/vRT4dE7BrDVNlSW97BptZ7JNrDwSDg8T3/7wQV5NTWu7mVWZKwtl+Hh5dZX8TBeXV0ZW6lwKJ8e+VucXBvir84vk9s7GULRSEc5ZahCdkPnxBz9n6XSg6xgjOD5sxZbpmI6fbmjc+qP33xF1gnEzqg9yAD+VlZqMVgYG06bvm9k8wCw2oFQ6MLrX+8LE9C2jEw48mMdhaLOMBjNXH1SjG4Z6N/T4B6y5Wsp09cHB/rycq24kjw4PrKnAkNdydYHlaqXA9OnnDT79vIkchPRffOPVDm++2gWv5lLEC6LpBA3TVFkk55oKPgAcHx0YPpsdfNomuylXCgBP1tfSWqaPmlOUXoS4TVi00mXlN8CrFDa9alfFBZt8PH/b4zbTdCNcy7BFrF9UPhhHFAxIlwptBwDvHDkzG/CZVkupUfaRObw9kUcVU8AzbLm0qtNUy8Zu8lMRg3neNfChZ7m0bUxTzW4DSgfN/DxvPpvbBnCmH9rm6E6lgsYs0hoj6YZOTmSGeES+yriMoiiWBWAC8NIzi5iK8GqVcRXKPrLyP0N4Xr0HYXg9+dJGWWxAybKPvKWOCOJ5+R6E3lDKfLdSNqBUQUrpqusQnhcT2hE8AaXYUgWMi1bmKPvIYoYZRzeGdjB/bWybQ6VLhg/K0NAU3fhpKWdRcpM7djMn57pcnavr0YGbPGzC63S5coMvzWoRa7fU3uu1VajckQzWDMY50oF9DP48qEI5JCt1drbC2dkqOis1vdq6n+dNZ8BBvZxXntXmilYyaB0IxpX3EVmAV8MHfp63Ab9ZpFhkrQhvUaDm5vakAy3rWoTy/LhngC2e4dmUYmsbOMRWH6SUfczdVSOIbqhpiTIOmGqWNTdwsAN/fHSI48ODJKGeLc9xulwpbT84PsL946Ok9p6eLfH0dOkuefTSjZkNo7F9xryRSzvXp9N7dir4AHD/+BCny6XyYKngA8Ab94/x5HTpCGPGAG8Pg25pEx9knaRWuCzUET/28Tzd4YrbsIlPzklqtaqjbWFpMekBqcCP44Tc8yPabU9SqxyQDuJ5G/Cl5ke0256khoxVZiGLigiG8LzlXD0JxTwJpHbbk9TiQ8hz5zXTy/NiQjChtbH1NvFBSfCZf5pqFN3Y9lrJOzGl3fYktdITVZ0DOKlXC49g1BDGVK9nzbKUTHUZGavMgmxXMM/THBUzcFm02hs4oNhqKfmA1z0hg240wSiJeHJikMK6NiD3JLXasxoFGMDz1IJ2tl7GLB5gO3+0mr9AiKXUga7eTAfwdpvhpiFsbxMfvhBliXTSjfBQESz7m+UoI2hnjQJKVEbkXo9OT5qYWztN0A3NsQHdWNTdUduRlTpdrvAgNXxsCR0/OV3izQfHSe399emZYQMOXxM4/xfddOMCHsD+V9vs8yOi5wl/7533OTcrFbu7NYO9m/hVeF3+/DTPuzfx+c0vfiYqb+KTZ6/3mPWl04EPCR8E8LxrfgS2sIlPNPAzljl2Dndmr7bu7vV+4LewgUN9usmz2noy3dDDANzaaikvMs/bDWkIz+f0AlMo6DmAnVw8H0U3uXk+mm58wPN5DQGcAPxoOzwfSTfVeH6dJzgp7oYCwHd/9N7bIB5tNCEP3bh2hri9PL8G/jmAk9/+8oOPY7H8PwY2MBkfDVVMAAAAAElFTkSuQmCC" InformativeScreenshot="eb25b5356cf00aac83eb94080fd0a7ea.png" Reference="V8TgNUEqnkuc_W41PgtOEw/IE0udpCgyU-dwygsy0OgfA" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='计算器' /&gt;" Title="计算器" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "计算器",
+  "Type": "Screen",
+  "Id": "IE0udpCgyU-dwygsy0OgfA",
+  "Reference": "V8TgNUEqnkuc_W41PgtOEw/IE0udpCgyU-dwygsy0OgfA",
+  "ParentRef": "V8TgNUEqnkuc_W41PgtOEw/1uB8e0CdH0m4uDBsgBPrOg",
+  "Created": "2023-12-13T14:05:37.5237652Z",
+  "Updated": "2023-12-13T14:05:37.5237652Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
