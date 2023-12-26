@@ -2,7 +2,7 @@
   "name": "UipathVaultVB",
   "projectId": "936475a4-5a69-4999-b1f2-44ac7f0d485a",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "complex🌰️\\循環找電影🌰️rpachallenge.com.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.22.0-preview]",
@@ -44,14 +44,13 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "0774d0b6-e27d-4098-ab57-707ab64e52eb",
+      "filePath": "complex🌰️\\循環找電影🌰️rpachallenge.com.xaml",
+      "uniqueId": "d30cb489-3f3c-44a2-8de3-ae4f899c363e",
       "input": [],
       "output": []
     }

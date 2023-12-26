@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Blank",
+  "Type": "Screen",
+  "Id": "ro29lsegs0COHV-ElR1HYw",
+  "Reference": "V8TgNUEqnkuc_W41PgtOEw/ro29lsegs0COHV-ElR1HYw",
+  "ParentRef": "V8TgNUEqnkuc_W41PgtOEw/ddZUMR5hcU-gukuO6VotgQ",
+  "Created": "2023-12-26T10:29:47.9592257Z",
+  "Updated": "2023-12-26T10:29:59.0637858Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
