@@ -1,0 +1,15 @@
+﻿{
+  "Name": "landing",
+  "Type": "Screen",
+  "Id": "GvaV3slspkaxXF-s2A5oUg",
+  "Reference": "V8TgNUEqnkuc_W41PgtOEw/GvaV3slspkaxXF-s2A5oUg",
+  "ParentRef": "V8TgNUEqnkuc_W41PgtOEw/T0Ka7p6HEUS61wtGOJsmUQ",
+  "Created": "2023-12-17T07:50:41.3290966Z",
+  "Updated": "2023-12-17T07:51:33.7028997Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

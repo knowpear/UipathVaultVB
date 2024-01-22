@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="770.8571428571429,1054.2857142857142" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="770.8571428571429,1316.5714285714287" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="25">
       <x:String>System.Activities</x:String>
@@ -65,11 +65,19 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="624,989.1428571428571" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="571.4285714285714,1251.4285714285713" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Default="Uipath" Name="MyString" />
+      <Variable x:TypeArguments="x:String" Name="MyString">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Ui</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Name="currentItem" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="i" />
     </Sequence.Variables>
@@ -78,39 +86,48 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEach x:TypeArguments="x:Object" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562.2857142857143,878.8571428571429" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[MyString]">
+    <Assign sap:VirtualizedContainerService.HintSize="509.7142857142857,85.14285714285714" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:Object" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="509.7142857142857,852.5714285714286" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[MyString]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="528,688.5714285714286" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.42857142857144,662.2857142857143" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.85714285714283,313.14285714285717" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-              <ui:CommentOut.Body>
-                <Sequence sap2010:Annotation.AnnotationText="第一種寫法" DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450.2857142857143,233.71428571428572" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388.57142857142856,92.57142857142857" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[currentItem.ToString()]" />
-                </Sequence>
-              </ui:CommentOut.Body>
-            </ui:CommentOut>
-            <WriteLine sap2010:Annotation.AnnotationText="第二種寫法" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="486.85714285714283,123.42857142857143" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[MyString.Substring(i,1)]">
+            <WriteLine sap2010:Annotation.AnnotationText="第一種寫法" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434.2857142857143,123.42857142857143" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[currentItem.ToString()]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </WriteLine>
-            <Assign sap:VirtualizedContainerService.HintSize="486.85714285714283,85.14285714285714" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <WriteLine sap2010:Annotation.AnnotationText="第二種寫法, 架空了currentItem" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434.2857142857143,123.42857142857143" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[MyString(i)]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </WriteLine>
+            <WriteLine sap2010:Annotation.AnnotationText="第三種寫法, 架空了currentItem" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434.2857142857143,123.42857142857143" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[MyString.Substring(i,1)]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </WriteLine>
+            <Assign sap:VirtualizedContainerService.HintSize="434.2857142857143,85.14285714285714" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
               </Assign.To>
@@ -125,5 +142,12 @@
         <OutArgument x:TypeArguments="x:Int32" />
       </ui:ForEach.CurrentIndex>
     </ui:ForEach>
+    <WriteLine sap2010:Annotation.AnnotationText="expansion: dotnet獲取上標, 下標寫法" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="509.7142857142857,123.42857142857143" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;下標: &quot; + Mystring.ToCharArray.GetLowerBound(0).ToString() + &quot;上標: &quot; + Mystring.ToCharArray.GetUpperBound(0).ToString()]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
   </Sequence>
 </Activity>
